@@ -1,0 +1,105 @@
+var ele = document.getElementById("pump-dump-data"), elestyle =window.getComputedStyle(ele);
+var eleWidth   = parseInt(elestyle.width)-10;
+var eleHeigth = parseInt(elestyle.height)-10;
+//alert(eleHeigth);
+var chart = LightweightCharts.createChart(document.getElementById("pump-dump-data"), {
+	width: eleWidth,
+  height: eleHeigth,
+	layout: {
+		backgroundColor: '#000000',
+		textColor: 'rgba(255, 255, 255, 0.9)',
+	},
+	grid: {
+		vertLines: {
+			color: 'rgba(0, 0, 0, 0.5)',
+		},
+		horzLines: {
+			color: 'rgba(0, 0, 0, 0.5)',
+		},
+	},
+	crosshair: {
+		mode: LightweightCharts.CrosshairMode.Normal,
+	},
+	rightPriceScale: {
+		borderColor: 'rgba(197, 203, 206, 0.8)',
+	},
+	timeScale: {
+		borderColor: 'rgba(197, 203, 206, 0.8)',
+	},
+});
+
+var candleSeries = chart.addCandlestickSeries({
+  upColor: 'rgba(255, 144, 0, 1)',
+  downColor: '#000',
+  borderDownColor: 'rgba(255, 144, 0, 1)',
+  borderUpColor: 'rgba(255, 144, 0, 1)',
+  wickDownColor: 'rgba(255, 144, 0, 1)',
+  wickUpColor: 'rgba(255, 144, 0, 1)',
+});
+
+candleSeries.setData([
+	
+	{ time: '2019-02-26', open: 185.59, high: 188.47, low: 182.80, close: 188.30 },
+	{ time: '2019-02-27', open: 187.90, high: 188.50, low: 183.21, close: 183.67 },
+	{ time: '2019-02-28', open: 183.60, high: 185.19, low: 183.11, close: 185.14 },
+	{ time: '2019-03-01', open: 185.82, high: 186.56, low: 182.86, close: 185.17 },
+	{ time: '2019-03-04', open: 186.20, high: 186.24, low: 182.10, close: 183.81 },
+	{ time: '2019-03-05', open: 184.24, high: 185.12, low: 183.25, close: 184.00 },
+	{ time: '2019-03-06', open: 184.53, high: 184.97, low: 183.84, close: 184.45 },
+	{ time: '2019-03-07', open: 184.39, high: 184.62, low: 181.58, close: 182.51 },
+	{ time: '2019-03-08', open: 181.49, high: 181.91, low: 179.52, close: 181.23 },
+	{ time: '2019-03-11', open: 182.00, high: 183.20, low: 181.20, close: 182.44 },
+	{ time: '2019-03-12', open: 183.43, high: 184.27, low: 182.33, close: 184.00 },
+	{ time: '2019-03-13', open: 183.24, high: 183.78, low: 181.08, close: 181.14 },
+	{ time: '2019-03-14', open: 181.28, high: 181.74, low: 180.50, close: 181.61 },
+	{ time: '2019-03-15', open: 182.30, high: 182.49, low: 179.57, close: 182.23 },
+	{ time: '2019-03-18', open: 182.53, high: 183.48, low: 182.33, close: 183.42 },
+	{ time: '2019-03-19', open: 184.19, high: 185.82, low: 183.48, close: 184.13 },
+	{ time: '2019-03-20', open: 184.30, high: 187.12, low: 183.43, close: 186.10 },
+	{ time: '2019-03-21', open: 185.50, high: 190.00, low: 185.50, close: 189.97 },
+	{ time: '2019-03-22', open: 189.31, high: 192.05, low: 188.67, close: 188.75 },
+	{ time: '2019-03-25', open: 188.75, high: 191.71, low: 188.51, close: 189.68 },
+	{ time: '2019-03-26', open: 190.69, high: 192.19, low: 188.74, close: 189.34 },
+	{ time: '2019-03-27', open: 189.65, high: 191.61, low: 188.39, close: 189.25 },
+	{ time: '2019-03-28', open: 189.91, high: 191.40, low: 189.16, close: 190.06 },
+	{ time: '2019-03-29', open: 190.85, high: 192.04, low: 190.14, close: 191.89 },
+	{ time: '2019-04-01', open: 192.99, high: 195.90, low: 192.85, close: 195.64 },
+	{ time: '2019-04-02', open: 195.50, high: 195.50, low: 194.01, close: 194.31 },
+	{ time: '2019-04-03', open: 194.98, high: 198.78, low: 194.11, close: 198.61 },
+	{ time: '2019-04-04', open: 199.00, high: 200.49, low: 198.02, close: 200.45 },
+	{ time: '2019-04-05', open: 200.86, high: 203.13, low: 200.61, close: 202.06 },
+	{ time: '2019-04-08', open: 201.37, high: 203.79, low: 201.24, close: 203.55 },
+	{ time: '2019-04-09', open: 202.26, high: 202.71, low: 200.46, close: 200.90 },
+	{ time: '2019-04-10', open: 201.26, high: 201.60, low: 198.02, close: 199.43 },
+	{ time: '2019-04-11', open: 199.90, high: 201.50, low: 199.03, close: 201.48 },
+	{ time: '2019-04-12', open: 202.13, high: 204.26, low: 202.13, close: 203.85 },
+	{ time: '2019-04-15', open: 204.16, high: 205.14, low: 203.40, close: 204.86 },
+	{ time: '2019-04-16', open: 205.25, high: 205.99, low: 204.29, close: 204.47 },
+	{ time: '2019-04-17', open: 205.34, high: 206.84, low: 205.32, close: 206.55 },
+	{ time: '2019-04-18', open: 206.02, high: 207.78, low: 205.10, close: 205.66 },
+	{ time: '2019-04-22', open: 204.11, high: 206.25, low: 204.00, close: 204.78 },
+	{ time: '2019-04-23', open: 205.14, high: 207.33, low: 203.43, close: 206.05 },
+	{ time: '2019-04-24', open: 206.16, high: 208.29, low: 205.54, close: 206.72 },
+	{ time: '2019-04-25', open: 206.01, high: 207.72, low: 205.06, close: 206.50 },
+	{ time: '2019-04-26', open: 205.88, high: 206.14, low: 203.34, close: 203.61 },
+	{ time: '2019-04-29', open: 203.31, high: 203.80, low: 200.34, close: 202.16 },
+	{ time: '2019-04-30', open: 201.55, high: 203.75, low: 200.79, close: 203.70 },
+	{ time: '2019-05-01', open: 203.20, high: 203.52, low: 198.66, close: 198.80 },
+	{ time: '2019-05-02', open: 199.30, high: 201.06, low: 198.80, close: 201.01 },
+	{ time: '2019-05-03', open: 202.00, high: 202.31, low: 200.32, close: 200.56 },
+	{ time: '2019-05-06', open: 198.74, high: 199.93, low: 198.31, close: 199.63 },
+	{ time: '2019-05-07', open: 196.75, high: 197.65, low: 192.96, close: 194.77 },
+	{ time: '2019-05-08', open: 194.49, high: 196.61, low: 193.68, close: 195.17 },
+	{ time: '2019-05-09', open: 193.31, high: 195.08, low: 191.59, close: 194.58 },
+	{ time: '2019-05-10', open: 193.21, high: 195.49, low: 190.01, close: 194.58 },
+	{ time: '2019-05-13', open: 191.00, high: 191.66, low: 189.14, close: 190.34 },
+	{ time: '2019-05-14', open: 190.50, high: 192.76, low: 190.01, close: 191.62 },
+	{ time: '2019-05-15', open: 190.81, high: 192.81, low: 190.27, close: 191.76 },
+	{ time: '2019-05-16', open: 192.47, high: 194.96, low: 192.20, close: 192.38 },
+	{ time: '2019-05-17', open: 190.86, high: 194.50, low: 190.75, close: 192.58 },
+	{ time: '2019-05-20', open: 191.13, high: 192.86, low: 190.61, close: 190.95 },
+	{ time: '2019-05-21', open: 187.13, high: 192.52, low: 186.34, close: 191.45 },
+	{ time: '2019-05-22', open: 190.49, high: 192.22, low: 188.05, close: 188.91 },
+	{ time: '2019-05-23', open: 188.45, high: 192.54, low: 186.27, close: 192.00 },
+	{ time: '2019-05-24', open: 192.54, high: 193.86, low: 190.41, close: 193.59 },
+]);

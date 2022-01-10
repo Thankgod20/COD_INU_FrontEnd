@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD_INU TOKEN- INF</title>
+    <link rel="icon" href="https://codtokens.com/wp-content/uploads/2021/12/cropped-10-Recovered-3-1-1-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://codtokens.com/wp-content/uploads/2021/12/cropped-10-Recovered-3-1-1-180x180.png" />
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/jquery.js"></script>
+    <script src="main.build.js"></script>
+    
+   
+</head>
+<body>
+  <div class="body">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="influx" src="logo2.png" alt="INF"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div align="right" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#abt">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exch">Exchange</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link" href="#tokenc">Tokenomic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contacts">Contact us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+   <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <h6 class="sm-font" >Welcome To</h6>
+                    <h1 class="big-font">COD INU<span class="cursor">!</span> </h1>
+                    <h6 class="sm-font">World first mobile game meme coin dedicated for COD mobile game Lovers</h6>
+                    <div class="row token">
+                      <div align="center"  class="col-xs-4 col-sm-4 col-md-4">
+                          <button class="free-token claim">GET FREE TOKEN</button> 
+                      </div>
+                      <div align="center" class="col-xs-4 col-sm-4 col-md-4">
+                        <span style="color:rgb(151, 151, 151);font-weight: 300;">Swap Token </span><br><span style="color:rgb(151, 151, 151);font-weight: 300;">(coming soon)</span>
+                      </div>
+                      <div align="center" class="col-xs-4 col-sm-4 col-md-4">
+                        <span style="color:rgb(151, 151, 151);font-weight: 300;">Chart </span><br><span style="color:rgb(151, 151, 151);font-weight: 300;">(coming soon)</span>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-xs-6 col-md-6 col-sm-6">
+                  <div class="container">
+                      <div class="count-down"> 
+                          <div class="row">
+                            <span id="expired"></span>
+                            <div class="col-3 col-md-3 col-sm-3">
+                              <span>D</span><br><div class="days counter" align="center"><span id="day">10</span></div>
+                            </div>
+                            <div class="col-3 col-md-3 col-sm-3">
+                              <span>H</span><br><div class="hours counter" align="center"><span id="Hour">00</span></div>
+                            </div>
+                            <div class="col-3 col-md-3 col-sm-3">
+                              <span>M</span><br><div class="minutes counter" align="center"><span id="minutes">00</span></div>
+                            </div>
+                            <div class="col-3 col-md-3 col-sm-3">
+                              <span>S</span><br><div class="seconds counter" align="center"><span id="seconds">00</span></div>
+                            </div>
+                          </div>
+                          <div class="launh-info">
+                            <div>Your Account</div>
+                            <div id="Account" class="account"></div>
+                            <span style="font-size: 10px;">We are currently carrying out an initial coin offering to the general public to increase the number of holder in this token. This is done through referrance. for Every successful referrance a sum of 100 INF will be added to your wallet with initial offering of 100INF</span>
+                          </div>
+                          <div class="button-info" align="center">
+                            <button class="addr claim">Claim Token</button>
+                          </div>
+                          <br>
+                          <span>PreSale </span>
+                          <input type="text" id="ethV" class="ethV" value="" placeholder="0.1">
+                          <br>
+                          <div class="button-info" align="center">
+                            <button class="addr presale">Buy Token</button>
+                          </div>                           
+                          <div style="padding-top:12px">
+                            <span>Get Referral Link</span> 
+                            <input type="hidden" id="copyLink" value="">
+                            <div class="button-info" align="center">
+                              <button class="addr getRefLink">Get Referral Link</button>
+                            </div> 
+                            <div id="refs" style="display: none;">
+                                <span>Your ref Link</span>
+                                <div id="reff"></div> 
+                                <br>
+                                <button onclick="copyToClipboard()" style="
+                                    border: 1px #3c301e solid;
+                                    border-radius: 10px;
+                                    background: #e5c187;
+                                    color: white;
+                                ">copy</button>
+                            </div>     
+                                                        
+                          </div>
+
+                 
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container">
+          <div class="row contract-info">
+            
+            <div align="center" class="col-xs-4 col-sm-4 col-md-4">
+              <span  class="tokens">Total Supply Tokens</span><br><span class="count" data-target="1000000000000" style="font-size: 12px;">0</span>
+            </div>
+            
+            <div align="center" class="col-xs-4 col-sm-4 col-md-4">
+              <span class="tokens">Current holders</span><br><span class="count" data-target="00" style="font-size: 12px;">0</span>
+            </div>
+            <div align="center" class="col-xs-4 col-sm-4 col-md-4">
+              <span class="tokens">Token For airdrop Distribution</span><br><span class="count" data-target="10000000" style="font-size: 12px;">00</span>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="abt" id="abt">
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div>
+                 <p class="abtUS"> About Us</p> 
+                 <p><h3>
+                   COD_INU TOKEN- is a game meme token for all COD game lovers and also the major currency for the up coming COD metaverse project
+                 </h3></p>
+                 <p>
+                   <span class="aim">AIM:</span><span><h6>Provides Finiancial support for our project - Generating initial liquidity for dex</h6></span>
+                 </p>
+                 <p>
+                   <span class="obj">Objective:</span><span><h6>Profit and taxes gained from the sale of token are to be used to develop our metaverse project </h6></span>
+                 </p>
+                 <p>
+                   <span class="motivation">Support-US</span><span><h6>COD_INU token gives holders the opportunity to own a part of COD Metaverse project, providing NFT market place for Call of Duty 3D play game characters and investors</h6></span>
+                 </p>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="influx-icon">
+                    <img class="influx-img" src="logo3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+    </section> 
+    <section class="exchanges" id="exch">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6"></div>
+          <div class="col-xs-6 col-sm-6 col-md-6" style="background: #0000004f;">
+            <h3>
+              Network and Exchanges
+            </h3>
+            <p>
+              <ul>
+                <li>
+                  <i class="bx bx-coin"></i> COD_INU token is to be launched on the binance smart chain network with an initial supply of 1 trillion token with 40% of total token burnt and half shared through airdrop to the first initial holder
+                </li>
+                <li>
+                  <i class="bx bx-coin"></i> For exchanges COD_Inu token will be listed on pancake swap and liquidity locked for the duration of the project 2 years.
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="row" style="padding-left: 10%;    
+                                padding-right: 10%;
+                                background: black;
+                                margin-top: 5%;
+                                padding-top: 3%;">
+          <h3 style="text-align: center;">Expected Listing</h3>
+          <div align="center" style="margin:10px" class="col-xs-4 col-sm-4 col-md-4"><img class="bsc" src="BscScan-logo-light.webp" alt=""></div>
+          <div align="center" style="margin:10px" class="col-xs-4 col-sm-4 col-md-4"><img class="coingecko" src="coingecko.webp" alt=""></div>
+          <div align="center" style="margin:10px" class="col-xs-4 col-sm-4 col-md-4"><img class="coinmarket" src="coinmarket.webp" alt=""></div>
+        </div>
+      
+      
+    </section>
+    <section class="tokeconomics" id="tokenc">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <h3>
+              Tokenomic
+            </h3>
+            <p>
+              <ul>
+                <li>
+                  <i class="bx bx-coin"></i> Embrace the future of Gamify projects, bringing fun and finance swiftly, allowing the community to expand its  border on a decentralized network 
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="influx-icon tokeconomics">
+              <img class="influx-img" src="PicsArt_12-24-01.48.36.png" alt="">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <h3>
+              Contact Us 
+            </h3>
+            <h6>You can contact us through the following medium. This is for support or more info about the project</h6>
+            <div class="row" style="color: #e5c187;">
+              <div class="col-3 col-sm-3 col-md-3">
+                <a href="" style="color: #e5c187;"><i class="bx bxl-facebook-circle"></i></a>
+              </div>
+              <div class="col-3 col-sm-3 col-md-3">
+                <a href="" style="color: #e5c187;"><i class="bx bxl-telegram"></i></a>
+              </div>
+              <div class="col-3 col-sm-3 col-md-3">
+                <a href="" style="color: #e5c187;"><i class="bx bxl-twitter"></i></a>
+              </div>
+            </div>            
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="index.js"></script>
+<script>
+  //Blinking cursor
+    setInterval(function() {
+        $('.cursor').animate({
+            opacity: 1
+        }, 600).animate({
+            opacity: 0
+        }, 600)
+    }, 1200);
+    //On scroll Reveal nav bar
+
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        //alert(scroll);
+        if(scroll < 10){
+            $('.fixed-top').css('background', 'transparent');
+        } else{
+            $('.fixed-top').css('background', 'rgba(21, 20, 20, 0.85)');
+            $('.count').each(function () {
+                var target = $(this).attr('data-target');
+                //alert(target);
+                $(this).animate({
+                    Counter: target
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));    
+                    }
+                });
+            });                
+        }
+    });
+// Count down
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 31, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+// Get today's date and time
+var now = new Date().getTime();
+
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Output the result in an element with id="demo"
+document.getElementById("day").innerHTML = days ;
+document.getElementById("Hour").innerHTML = hours ;
+document.getElementById("minutes").innerHTML = minutes ;
+document.getElementById("seconds").innerHTML = seconds ;
+
+
+// If the count down is over, write some text 
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("expired").innerHTML = "EXPIRED";
+}
+}, 1000);
+
+</script>
+</html>

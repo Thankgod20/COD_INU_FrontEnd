@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    
+    background-image: url(bk.jpg);//linear-gradient(to bottom, black, rgb(83, 83, 83)); 
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    height: 100vh;
+    width: 100vw;
+    min-height: 99vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+  }
+
+
+.navbar-brand {
+ 
+    width: 50vw;
+}
+.navbar-collapse {
+    padding-left: 0%;
+}
+.bg-light {
+    background-color: #fff0 !important;
+}
+.influx {
+    width: 20%;
+    margin-left: 10%;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bolder;
+    margin-right: 10%;
+}
+.nav-item {
+    margin-right: 10%;
+}
+button.navbar-toggler {
+    background: #c59b69;
+}
+button.connect-wallet {
+    background: #c59b69;    
+    border: 1px;
+    border-radius: 20px;
+    padding: 5%;
+    color:white;
+  }
+div.connect-walle {
+    background: #55422a;
+    border-radius: 20px;
+    width: 40%;
+    margin-left: 40%;
+
+    
+  }
+div.chart {
+    background-color: #55422afa;
+    height: 60vh;
+    width: 100%;
+    border: 1px solid #ffcb8d;
+    border-radius: 20px;
+    padding: 4px;
+}
+div.pump {
+
+    height: 10vh;
+    width: 10vh;
+    border-top: 30vh solid transparent;
+    border-bottom: 30vh solid transparent;
+    border-right: 10vw solid #c59b69;
+}
+div.dump {
+    height: 60vh;
+    width: 100%;
+    border-radius: 20px;
+    background: #c59b69;
+    box-shadow: 6px -6px 20px 3px #000000;
+    padding: 10px;
+    padding-top: 10%;
+
+}
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(170, 112, 4);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: rgb(170, 118, 4);
+    cursor: pointer;
+  }
+
+  .bnb {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid rgb(212, 149, 13);
+  }
+
+  .pump-btn {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .dump-btn {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .cvalue {
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    color: black;
+  
+  }
+div.pump-orders {
+  height: 60vh;
+  border: 1px solid rgb(201, 123, 7);
+}  
+@media screen and (max-width:1024px) {
+    body {
+        background-position-x: 30%;
+        background-position-y: 30%;
+    }
+}

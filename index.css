@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+.navbar-brand {
+  width: 50vw;
+}
+
+.navbar-collapse {
+  padding-left: 0%;
+}
+
+.bg-light {
+  background-color: #fff0 !important;
+}
+
+.influx {
+  width: 10%;
+  margin-left: 10%;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bolder;
+  margin-right: 10%;
+}
+
+.nav-item {
+  margin-right: 10%;
+}
+
+input#ethV {
+  width: 100%;
+  padding: 10px;
+  border: 1px #e5c187 solid;
+  border-radius: 10px;
+  background: #3c301e;
+  color: #e5c187;
+}
+
+button.navbar-toggler {
+  background: #c59b69;
+}
+
+div.account {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div#reff {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section.header {
+  background-image: url(coin2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh !important;
+  padding: 10px;
+}
+
+section.abt {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#1a1a1a));
+  background-image: linear-gradient(to bottom, black, #1a1a1a);
+  -webkit-box-shadow: 0 0 8px 20px black;
+          box-shadow: 0 0 8px 20px black;
+  padding-top: 5% !important;
+  padding: 10px;
+}
+
+section.exchanges {
+  background-image: url(exchange2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+section.tokeconomics {
+  background-image: url(tokeconomis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+section.tokeconomics div.tokeconomics {
+  background-color: black;
+}
+
+section.contacts {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#1a1a1a));
+  background-image: linear-gradient(to bottom, black, #1a1a1a);
+  -webkit-box-shadow: 0 0 8px 20px black;
+          box-shadow: 0 0 8px 20px black;
+  padding-top: 5%;
+}
+
+p.abtUS {
+  background: #b97b1840;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  color: #b97b18;
+}
+
+span.aim {
+  background: #b97b1840;
+  width: 20%;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  color: #b97b18;
+  margin-right: 10%;
+}
+
+span.obj {
+  background: #b97b1840;
+  width: 20%;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  color: #b97b18;
+  margin-right: 10%;
+}
+
+span.motivation {
+  background: #b97b1840;
+  width: 20%;
+  padding: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  color: #b97b18;
+  margin-right: 10%;
+}
+
+div.influx-icon {
+  width: 100%;
+}
+
+img.influx-img {
+  width: 100%;
+}
+
+img.bsc {
+  width: 50%;
+}
+
+img.coinmarket {
+  width: 50%;
+}
+
+img.coingecko {
+  width: 50%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: white;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+div.container {
+  padding-top: 5%;
+}
+
+h1.big-font {
+  font-weight: 800;
+  font-size: 50px;
+  white-space: break-spaces;
+  text-shadow: 2px 2px 4px #5f4e33;
+}
+
+h6.sm-font {
+  text-shadow: 2px 2px 4px #5f4e33;
+}
+
+div.token {
+  margin-top: 40px;
+}
+
+button.free-token {
+  padding: 10px;
+  background: #e5c187;
+  border: 2px #b97b18 solid;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 10px;
+  white-space: nowrap;
+  width: 90%;
+  padding: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #e5c187;
+            box-shadow: 0 0 0 0 #e5c187;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 13px #fb634000;
+            box-shadow: 0 0 0 13px #fb634000;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #fb634000;
+            box-shadow: 0 0 0 0 #fb634000;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #e5c187;
+            box-shadow: 0 0 0 0 #e5c187;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 13px #fb634000;
+            box-shadow: 0 0 0 13px #fb634000;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #fb634000;
+            box-shadow: 0 0 0 0 #fb634000;
+  }
+}
+
+div.count-down {
+  background: #3c301e;
+  padding: 20px;
+  border-radius: 15px;
+  width: 99%;
+  -webkit-box-shadow: 1px 1px 20px 2px #251f15;
+          box-shadow: 1px 1px 20px 2px #251f15;
+}
+
+div.counter {
+  background: white;
+  height: 30px;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+span {
+  font-weight: 800;
+  text-align: center;
+}
+
+div.launh-info {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+div.button-info {
+  margin-top: 20px;
+}
+
+span.tokens {
+  text-decoration: underline;
+}
+
+button.addr {
+  padding: 10px;
+  background: #e5c187;
+  border: 2px #b97b18 solid;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  width: 90%;
+  padding: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #e5c187;
+            box-shadow: 0 0 0 0 #e5c187;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 13px #fb634000;
+            box-shadow: 0 0 0 13px #fb634000;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #fb634000;
+            box-shadow: 0 0 0 0 #fb634000;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px black;
+          box-shadow: inset 0 0 5px black;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ad9266;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6c8c89;
+}
+
+div.contract-info {
+  background: black;
+  -webkit-box-shadow: 0px 1px 20px 20px black;
+          box-shadow: 0px 1px 20px 20px black;
+}
+
+@media screen and (max-width: 780px) {
+  ul.me-auto {
+    background: #ffffff17;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  h1.big-font {
+    font-size: 70px;
+  }
+  div.count-down {
+    width: 60%;
+    margin-left: 30%;
+  }
+  button.free-token {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
