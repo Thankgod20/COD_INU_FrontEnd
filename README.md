@@ -34,9 +34,9 @@ To get started with COD_INU_FrontEnd, follow these steps:
 ## Project Structure
 
 - **`index.html`:** Main HTML file providing the overall structure of the frontend.
-- **`airdrop.html`:** Airdrop-specific HTML page.
-- **`presale.html`:** Presale-specific HTML page.
-- **`referral.html`:** Referral system HTML page.
+- ** Airdrop-specific HTML page.
+- ** Presale-specific HTML page.
+- ** Referral system HTML page.
 
 ## Contributing
 
